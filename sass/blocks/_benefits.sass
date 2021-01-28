@@ -42,17 +42,32 @@
         left: -65px
         padding: 26px 7px 23px 10px
         z-index: 10
-    &__icon
-        display: inline-block
-        width: 52px
+    &__background-icon
+        position: relative
         height: 52px
-        padding: 17px 15px
+        width: 52px
         border-radius: 50%
-        background-color: $light
         &--clients
             margin-bottom: 13px
+            background-color: $light
         &--sales
             margin-right: 14px
+            background-color: $light
+        &--increase
+            background-color: #F6F4FC
+            margin-right: 18px
+    &__icon
+        display: inline-block
+        position: absolute
+        &--clients
+            top: 16px
+            left: 14px
+        &--sales
+            top: 16px
+            left: 16px
+        &--arrow
+            top: 17px
+            left: 16px
     &__title
         margin: 0
         color: $light
@@ -60,7 +75,7 @@
         line-height: 124.2%
         margin-bottom: 7px
         &--sales
-            margin-bottom: 6px
+            margin-bottom: 4px
     &__text
         color: $light
         font-size: 12px
@@ -72,19 +87,40 @@
             width: 160px
     &__sales
         position: absolute
-        top: 247px
+        top: 248px
         right: -170px
         width: 288px
         background: #121B30
         border-radius: 21px
         display: flex
         align-items: center
-        padding-top: 16px
+        padding-top: 18px
         padding-left: 20px
-        padding-bottom: 20px
+        padding-bottom: 14px
     &__group
         display: flex
         flex-direction: column
         justify-content: center
+    &__increase
+        position: absolute
+        width: 326px
+        bottom: -100px
+        right: -67px
+        background: $light
+        border-radius: 15px
+        padding: 22px 33px 23px 23px
+    &__join
+        display: flex
+        align-items: center
+        margin-bottom: 35px
+    &__black-title
+        width: 150px
+        font-family: 'GothamPro-Bold'
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 124.2%
+        color: #121B30
+        margin: 0
 
             
