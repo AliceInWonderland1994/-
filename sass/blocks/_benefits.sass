@@ -49,25 +49,42 @@
         padding: 17px 15px
         border-radius: 50%
         background-color: $light
-        margin-bottom: 13px
+        &--clients
+            margin-bottom: 13px
+        &--sales
+            margin-right: 14px
     &__title
         margin: 0
         color: $light
         font-size: 22px
         line-height: 124.2%
         margin-bottom: 7px
+        &--sales
+            margin-bottom: 6px
     &__text
         color: $light
-        text-align: center
         font-size: 12px
         line-height: 150%
         margin: 0
+        &--clients
+            text-align: center
+        &--sales
+            width: 160px
     &__sales
+        position: absolute
+        top: 247px
+        right: -170px
         width: 288px
         background: #121B30
         border-radius: 21px
         display: flex
-        &--group
-            flex-direction: column
+        align-items: center
+        padding-top: 16px
+        padding-left: 20px
+        padding-bottom: 20px
+    &__group
+        display: flex
+        flex-direction: column
+        justify-content: center
 
             
