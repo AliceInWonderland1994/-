@@ -1,6 +1,17 @@
 .benefits
     position: relative
     padding-top: 30px
+    padding-bottom: 71px
+    &::after
+        content: ""
+        position: absolute
+        background-repeat: no-repeat
+        background-image: url('../img/yellow-arrow.svg')
+        height: 40%
+        width: 40%
+        background-size: 100%
+        top: 420px
+        left: -15px
     &__rectangle
         &--coral
             display: inline-block
@@ -9,16 +20,6 @@
             background: #F86161
             border-radius: 59px
             z-index: 1
-        &::after
-            content: ""   
-            position: absolute
-            background-repeat: no-repeat
-            background-image: url('../img/woman.png')
-            height: 118%
-            width: 118%
-            top: -51px
-            left: -66px
-            background-size: 100%
         &::before
             content: ""   
             position: absolute
@@ -30,6 +31,16 @@
             right: -50px
             top: 0px
             z-index: -1
+        &::after
+            content: ""   
+            position: absolute
+            background-repeat: no-repeat
+            background-image: url('../img/woman.png')
+            height: 118%
+            width: 118%
+            top: -51px
+            left: -66px
+            background-size: 100%
     &__clients
         position: absolute
         width: 159px
@@ -104,7 +115,7 @@
     &__increase
         position: absolute
         width: 326px
-        bottom: -100px
+        top: 430px
         right: -67px
         background: $light
         border-radius: 15px
@@ -122,5 +133,7 @@
         line-height: 124.2%
         color: #121B30
         margin: 0
+    &__aside
+        height: 51px
 
             
